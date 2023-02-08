@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fighting Game</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="position: relative; display: inline-block">
+      <div
+        style="
+          position: absolute;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          padding: 20px;
+        "
+      >
+        <!-- player health -->
+        <div
+          style="
+            position: relative;
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+          "
+        >
+          <div
+            style="background-color: yellow; height: 30px; width: 100%"
+          ></div>
+          <div
+            id="playerHealth"
+            style="
+              position: absolute;
+              background-color: blue;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              width: 100%;
+            "
+          ></div>
+        </div>
+        <!-- timer -->
+        <div
+          style="
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+          "
+        ></div>
+        <!-- enemy health -->
+        <div style="position: relative; height: 30px; width: 100%">
+          <div style="background-color: yellow; height: 30px"></div>
+          <div
+            id="enemyHealth"
+            style="position: absolute; background-color: blue; inset: 0"
+          ></div>
+        </div>
+      </div>
+      <canvas></canvas>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
